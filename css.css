@@ -1,0 +1,14 @@
+body {
+	color: black;
+	font-family: Courier New;
+}
+
+input{
+	font-family: Courier New;
+}
+
+#cy{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+}
