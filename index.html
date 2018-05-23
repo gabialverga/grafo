@@ -10,29 +10,11 @@
 	<form method = "get">
 		<p>Número de nós:</p>
 		<input type="number" id="qntNos" min = "1"> <br><br>
-		<input type="button" id ="submit" value="Gerar grafo completo" onclick="completo()"/>
+		<input type="button" id ="submit" value="Inserir arestas" onclick="matriz()"/>
 	</form>
-	<table id = "tbl">
-		<tr>1  2  3</tr>
-		<tr>
-			<td>1</td>
-			<td><input type="checkbox" id="00"></td>
-			<td><input type="checkbox" id="01"></td>
-			<td><input type="checkbox" id="02"></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td><input type="checkbox" id="10"></td>
-			<td><input type="checkbox" id="11"></td>
-			<td><input type="checkbox" id="12"></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td><input type="checkbox" id="20"></td>
-			<td><input type="checkbox" id="21"></td>
-			<td><input type="checkbox" id="22"></td>
-		</tr>
-	</table>
+	<br>
+	<div id = 'tabela'></div><br>
+	<input type="button" id ="gera" value="Gerar Grafo" style = "visibility: hidden;" onclick="geraGrafo()"/>
 	<br><br>
 	<div id = 'cy'></div>
 </body>
