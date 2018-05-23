@@ -11,7 +11,8 @@ function geraGrafo(){
 	}
 	for(var i=0;i<qnt;i++){
 		for(var j=0;j<qnt;j++){
-			if(document.getElementById((i*qnt)+j)!==null){
+			var id = ((i*qnt)+j).toString();
+			if(document.getElementById(id).checked){
 				e.push({
 					data:{
 						source: i,
