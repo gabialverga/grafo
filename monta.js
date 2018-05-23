@@ -51,9 +51,7 @@ function matriz(){
 		html.push(i+1);
 		html.push('</td>');
 		for(var j=0;j<qnt;j++){
-			html.push('<td><input type="checkbox" id = "');
-			html.push((i*qnt)+j);
-			html.push('"></td>');
+			html.push('<td><input type="checkbox" id="' + ((i*qnt)+j) + '"></td>');
 		}
 		html.push('</tr>');
 	}
